@@ -34,10 +34,12 @@ cv2.destroyAllWindows()
 
 # %%
 
-Median filter
-Non-Local means filter
-erosion
-dilation
-opening
-closing
-top-hasattr
+# Median filter
+# Non-Local means filter
+# erosion
+# dilation
+# opening
+# closing
+# top-hat
+# black-hat
+# Gradient morphological operation
