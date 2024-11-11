@@ -11,7 +11,7 @@ To run the scripts in this repository, you’ll need to have Python installed al
 1. **Clone this repository:**
 
 ```bash
-git clone https://github.com/yourusername/Image-Processing-with-Python.git
+git clone https://github.com/Cypher012/Image-Processing-with-Python.git
 cd Image-Processing-with-Python
 ```
 
