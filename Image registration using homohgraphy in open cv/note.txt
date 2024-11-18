@@ -1,0 +1,10 @@
+"""
+1. Import two Images
+2. Convert to grayscale
+3. Initiate ORB detector
+4. Find key points and describe
+5. Match Keypoints - Brute force matcher
+6. RANSAC (reject bad keypoints)
+7. Register two images (use homology)
+
+"""

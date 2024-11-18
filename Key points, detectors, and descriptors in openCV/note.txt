@@ -1,0 +1,35 @@
+What are features, detectors, and keypoints?
+Features in an image are unique regions that the computer can easily tell apart.
+Corners are good examples of features. Finding these unique features is called feature detection.
+Once features are detected we need to find similar ones in a different image.
+This means we need to describe the features. 
+Once you have the features and its description, you can find same features 
+in all images and align them, stitch them or do whatever you want.
+
+Harris corner detector is a good example of feature detector. 
+
+Keypoints are the same thing as points of interest. 
+They are spatial locations, or points in the image that define what is interesting or what stand out in the image.
+The reason why keypoints are special is because no matter how the image changes...
+whether the image rotates, shrinks/expands, is translated, or distorted
+you should be able to find the same keypoints in this modified image when comparing with the original image.
+
+Harris corner detector detects corners. 
+FAST: Features from Accelerated Segment Test - also detects corners
+
+
+Each keypoint that you detect has an associated descriptor that accompanies it.
+SIFT, SURF and ORB all detect and describe the keypoints.
+
+Descriptors are primarily concerned with both the scale and the orientation of the keypoint.
+
+e.g. run ORB and draw keypoints with rich keypoints.
+some of these points have a different circle radius. These deal with scale.
+
+The larger the "circle", the larger the scale was that the point was detected at.
+Also, there is a line that radiates from the centre of the circle to the edge. 
+This is the orientation of the keypoint, which we will cover next
+
+Usually when we want to detect keypoints, we just take a look at the locations. 
+However, if you want to match keypoints between images, 
+then you definitely need the scale and the orientation to facilitate this.
