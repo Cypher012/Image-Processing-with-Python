@@ -1,0 +1,17 @@
+Operation Code Example
+Add/Subtract: df["age"] + 10
+Multiply/Divide: df["salary"] * 1.1
+Apply condition: np.where(df["age"] > 30, "Senior", "Junior")
+String manipulation: df["name"].str.upper()
+Aggregation: df["age"].mean(), df["salary"].sum()
+Filter rows: df[df["age"] > 30]
+Element-wise function:	np.log(df["salary"])
+Column interaction:	df["salary"] / df["age"]
+
+Method	Description
+isnull()	Identifies NaN cells.
+dropna()	Removes rows/columns with missing data.
+fillna(value)	Fills NaN with a fixed value.
+fillna(df[column].mean())	Fills NaN with the mean of the column.
+apply(lambda row: ...)	Complex imputation using other columns or logic.
+drop()	Removes columns (or rows) with excessive missing data.
